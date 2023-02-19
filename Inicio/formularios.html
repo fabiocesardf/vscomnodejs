@@ -11,29 +11,101 @@
 <body>
 
   <form>
-    <table border="4">
+    <table border="4"> <!-- TABELA DE LOGIN -->
       <thead></thead>
       <tbody>
-        <tr>
+        <tr> <!-- NOME -->
           <td><label for="idnome"> Nome</label></td>
           <td><input type="text" id="idnome"></td>
-        </tr>
+        </tr> <!-- FIM NOME -->
 
-        <tr>
+        <tr> <!-- SENHA -->
           <td><label for="idsenha">Senha</label></td>
-          <td><input type="password" id="idsenha"></td>
-        </tr>
+          <td><input type="password" id="idsenha" required></td>
+        </tr> <!-- FIM SENHA -->
 
-        <tr>
-          <td><label for="idconfsenha">Confirmar Senha<input type="password" id="idconfsenha"></label></td>
+        <tr> <!-- LEMBRAR SENHA -->
+          <td>
+            <label for="">Lembrar Senha </label>
+          </td>
+          <td>
+            <input type="radio" name="opcaogravarsenha" id="radio_sim" value="Sim"> <label for="radio_sim">Sim</label>
+            <input type="radio" name="opcaogravarsenha" id="radio_nao" value="Não"><label for="radio_nao">Não</label>
+          </td>
+        </tr> <!-- FIM LEMBRAR SENHA -->
 
-        </tr>
+        <div><!-- CIDADE -->
+          <tr>
+            <td><label for="">Informe sua cidade</label>
+            </td>
+            <td>
+              <select name="SelecaoCidades" id="select_cidade" required>
+                <option value="">Selecione</option>
+                <option value="id_cidade_planaltina">Planaltina</option>
+                <option value="id_cidade_Sobradinho">Sobradinho</option>
+                <option value="id_cidade_Paranoa">Paranoá</option>
+              </select>
+            </td>
+          </tr>
+        </div><!-- FIM CIDADE -->
+
+        <tr> <!-- NOTICIAS -->
+          <td><label for="idnome"><img src="img/whatspeq.jpg" width="40" height="40" alt=""></label>
+            <br>
+            <label for="">Receber Notícias</label>
+          </td>
+          <td>
+            <label for="check_futebol">
+              <input type="checkbox" name="check_esportes" id="check_futebol">
+              Futebol
+            </label>
+
+            <label for="check_basquete">
+              <input type="checkbox" name="check_esportes" id="check_basquete">
+              Basquete
+            </label>
+
+            <label for="check_volei">
+              <input type="checkbox" name="check_esportes" id="check_volei">
+              Vôlei
+            </label>
+          </td>
+        </tr> <!-- FIM NOTICIAS -->
+
+        <div> <!-- COMENTÁRIOS -->
+          <tr>
+            <td>
+              <label for="">Comentários</label>
+            </td>
+            <td>
+              <textarea name="" id="id_comentarios" cols="30" rows="10"></textarea>
+            </td>
+          </tr>
+        </div> <!-- FIM COMENTÁRIOS -->
 
       </tbody>
-      <tfoot></tfoot>
+
+      <tfoot>
+      </tfoot>
+    </table> <!-- FIM TABELA DE LOGIN -->
+
+    <table border="1"> <!-- TABELA COM BOTOES -->
+      <thead>
+      </thead>
+      <tbody>
+        <div>
+          <br>
+          <button>gravar</button>
+          <button>Cancelar</button>
+        </div>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table> <!-- FIM TABELA COM BOTOES -->
 
 
-    </table>
+
+    <br>
     <label for="idnome1">Nome</label> <!-- label, é o campo texto responsavel por identifcar o campo -->
     <!-- for, vai direcionar para onde o campo vai tomar foco, quando for clicado, no caso -->
     <!-- vai para o input idnome -->
