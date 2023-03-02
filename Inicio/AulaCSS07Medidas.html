@@ -29,12 +29,20 @@
     }
 
     div {
-      background: rgb(243, 219, 89);
+      background: rgb(82, 248, 218);
       margin: 5px 10px 50px 20px;
+      border: 5px rgb(119, 119, 121) solid;
       /* pode colocar apenas um valor e ele joga pra todos os lados
       ou então fazer igual acima, 5 para cima, 10 na direita, 50 em baixo e 20 na esquerda */
-      padding: 2%;
+      padding: 2% 3% 4% 5%;
+
       /* afastamento dentro do elemento */
+    }
+
+    #div_02 {
+      background: rgb(40, 235, 44);
+      border-right: 5px ridge;
+      border-top: 5px dotted indigo;
     }
   </style>
 </head>
@@ -55,7 +63,7 @@
     <p>TEXTO 03</p>
   </div>
 
-  <div>
+  <div id="div_02">
     <p>TEXTO 04</p>
     <p>TEXTO 05</p>
     <p>TEXTO 06</p>
